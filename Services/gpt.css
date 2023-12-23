@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.contain{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Create a grid with flexible columns */
+    gap: 20px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#e3dbf6 ,#a99bf9);
+    padding: 10px;  
+}
+.card{
+    width: 350px;
+    height: 515px;
+    margin: 100px auto 0;
+    perspective: 1000px;
+   
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.front, .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front{
+    background: url("male.car.jpg");
+    background-size: cover ;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #ccc;
+}
+.front h2 {
+    font-weight: 500;
+}
+.front p {
+    color: #ccc;
+    font-size: 15px;
+}
+.front button{
+    width: 120px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.back{
+    background: #fff;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+.back h1{
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10;
+}
+.back h1 span{
+font-weight: 400;
+}    
+.back p {
+    font-size: 14px;
+}
+.back img{
+    width: 120px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.col{
+    flex: 1;
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    position: relative;
+}
+.col h2 {
+    font-size: 20px;
+}
+.col::after{
+    content: '';
+    width: 1.5px;
+    height: 20px;
+    background: #7800ad;
+    position:absolute;
+    top:5px;
+    right: 0;
+
+}
+
+.col:last-child::after{
+    display: none;
+}
+.col p {
+    margin-top: 5px;
+}
+.back button{
+    background: #7800ad;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
+}
+.back a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  0 5px;
+}
+.back img {
+    width: 50%;
+}
+
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}

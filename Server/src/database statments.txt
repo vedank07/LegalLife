@@ -1,0 +1,10 @@
+CREATE TABLE law.reference_docs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    location TEXT
+);
+
+INSERT INTO law.reference_docs (name, location)
+VALUES
+    ('rentel', 'Data\Reference_doc\rentel.txt'),
+    ('doc', 'Data\Reference_doc\doc.txt');
