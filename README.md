@@ -25,7 +25,7 @@ Installation
 Cloning the Repository:
 
 ```
-git clone https://github.com/your_username/Legal-Life-Flask-Backend.git
+git clone [https://github.com/your_username/Legal-Life-Flask-Backend.git](https://github.com/vedank07/LegalLife.git)
 ```
 Installing Dependencies:
 
