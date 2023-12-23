@@ -24,14 +24,14 @@ ChromaDB: Used for semantic search functionality.
 Installation
 Cloning the Repository:
 
-bash
-Copy code
+```
 git clone https://github.com/your_username/Legal-Life-Flask-Backend.git
+```
 Installing Dependencies:
 
-bash
-Copy code
+```
 pip install -r requirements.txt
+```
 Database Setup:
 
 Create a MySQL database named Law.
